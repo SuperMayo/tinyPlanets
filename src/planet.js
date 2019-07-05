@@ -10,16 +10,13 @@ const imageCenter = state => Math.floor(state.res / 2);
 const planetCoordinates = state =>
   bitmapDisk({ radius: state.radius, x0: state.center, y0: state.center });
 
-const lightCoord = state =>
-  _.intersectionWith(
-    bitmapDisk({
-      radius: state.radius,
-      x0: floor(state.center - state.radius / 3),
-      y0: floor(state.center - state.radius / 3)
-    }),
-    state.planetCoord,
-    _.isEqual
-  );
+const lightCoord = state => {
+  return bitmapDisk({
+    radius: state.radius,
+    x0: floor(state.center - state.radius / 3),
+    y0: floor(state.center - state.radius / 3)
+  });
+};
 
 const chooseColor = state => coord => {
   // TODO: Make it less big, too much logic
