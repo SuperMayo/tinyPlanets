@@ -204,3 +204,5 @@ const makeSentence = (dict = DICT) => {
     random(dict.finish)
   ].join(" ");
 };
+
+document.getElementById("planetDescription").innerHTML = makeSentence(DICT);

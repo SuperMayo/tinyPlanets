@@ -21,7 +21,9 @@ body {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
   border-radius: 1px;
 }
-#canvas canvas {
+#canvas {
+  width: 200px;
+  height: 200px;
   margin: 10px;
   background-color: #161831;
 }
