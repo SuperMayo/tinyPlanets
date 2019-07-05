@@ -3,10 +3,10 @@
 > "An artistic project that generates random planets along with a random descritpion."
 
 <p>
-<img src="img/tinyplanet01" width="100px" title="A tiny planet">
-<img src="img/tinyplanet02" width="100px" title="A tiny planet">
-<img src="img/tinyplanet03" width="100px" title="A tiny planet">
-<img src="img/tinyplanet04" width="100px" title="A tiny planet">
+<img src="img/tinyplanet01.png" width="100px" title="A tiny planet">
+<img src="img/tinyplanet02.png" width="100px" title="A tiny planet">
+<img src="img/tinyplanet03.png" width="100px" title="A tiny planet">
+<img src="img/tinyplanet04.png" width="100px" title="A tiny planet">
 </p>
 
 You can see them [here !](https://supermayo.github.io/tinyPlanets)
