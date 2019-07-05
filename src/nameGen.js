@@ -180,7 +180,7 @@ const DICT = {
 const makeName = (dict = DICT.parts) => {
   let name = [random(dict)];
   name.push(random(dict));
-  while (Math.random() < 0.5) {
+  while (Math.random() < 0.4) {
     name.push(random(dict));
   }
   return capitalize(name.join(""));
