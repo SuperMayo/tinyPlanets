@@ -3,9 +3,11 @@ new p5();
 
 // init state
 const state = {
-  res: 81 // Must be an odd number
+  res: 111 // Must be an odd number
 };
+console.time("Planet generation");
 let planet = planetPipeline(state);
+console.timeEnd("Planet generation");
 
 const chooseTransp = (arr, planet) => {
   return _.isEqual(arr, planet.palette[0])
