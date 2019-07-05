@@ -53,7 +53,7 @@ const randomPalette = N => {
 // Return circle coordinates
 // Source https://fr.wikipedia.org/wiki/Algorithme_de_trac%C3%A9_de_cercle_d%27Andres#cite_note-1
 // {props} -> [[[x][y]],...]
-const bitmapCircle = ({ radius, x0, y0 }) => {
+const bitmapCircleDumb = ({ radius, x0, y0 }) => {
   let x = 0;
   let y = radius;
   let d = radius - 1;
@@ -85,8 +85,10 @@ const bitmapCircle = ({ radius, x0, y0 }) => {
   return _.uniqWith(circleCoordinates, _.isEqual);
 };
 
+const bitmapCircle = _.memoize(bitmapCircleDumb);
+
 // {props} -> [[[x][y]], ...]
-const bitmapDisk = ({ radius, x0, y0 }) => {
+const bitmapDiskDumb = ({ radius, x0, y0 }) => {
   let diskCoordinates = [];
   let r = radius;
   while (r >= 0) {
@@ -97,3 +99,5 @@ const bitmapDisk = ({ radius, x0, y0 }) => {
   }
   return diskCoordinates;
 };
+
+const bitmapDisk = _.memoize(bitmapDiskDumb);
