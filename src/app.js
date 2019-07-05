@@ -3,7 +3,7 @@ new p5();
 
 // init state
 const state = {
-  res: 111 // Must be an odd number
+  res: 99 // Must be an odd number
 };
 console.time("Planet generation");
 let planet = planetPipeline(state);

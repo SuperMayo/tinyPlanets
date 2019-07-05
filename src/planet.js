@@ -11,11 +11,12 @@ const planetCoordinates = state =>
   bitmapDisk({ radius: state.radius, x0: state.center, y0: state.center });
 
 const lightCoord = state => {
+  const inc = floor(state.radius / 3);
   return bitmapDisk({
     radius: state.radius,
-    x0: floor(state.center - state.radius / 3),
-    y0: floor(state.center - state.radius / 3)
-  });
+    x0: state.center,
+    y0: state.center
+  }).map(x => x.map(y => y - inc));
 };
 
 const chooseColor = state => coord => {
