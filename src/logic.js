@@ -1,3 +1,5 @@
+"use strict";
+
 // fp magic
 const objOf = k => v => ({ [k]: v });
 const applySpec = o => x =>
@@ -86,7 +88,7 @@ const bitmapCircle = ({ radius, x0, y0 }) => {
 // {props} -> [[[x][y]], ...]
 const bitmapDisk = ({ radius, x0, y0 }) => {
   let diskCoordinates = [];
-  r = radius;
+  let r = radius;
   while (r >= 0) {
     diskCoordinates = diskCoordinates.concat(
       bitmapCircle({ radius: r, x0: x0, y0: y0 })

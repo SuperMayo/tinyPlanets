@@ -1,3 +1,4 @@
+"use strict";
 new p5();
 
 // init state
@@ -26,7 +27,7 @@ function draw() {
   rectMode(CENTER);
   clear();
 
-  img = createImage(state.res, state.res);
+  const img = createImage(state.res, state.res);
   img.loadPixels();
   // draw planet
   planet.planetCoord.map(x => img.set(x[0], x[1], planet.chooseColor(x)));

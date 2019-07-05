@@ -1,3 +1,5 @@
+"use strict";
+
 // (a)(b) -> c
 const scaledNoise = state => (x, y = 0, z = 0) => {
   return noise((x + state.noiseSeed) * state.noiseScale, y * state.noiseScale);
@@ -21,7 +23,7 @@ const lightCoord = state =>
 
 const chooseColor = state => coord => {
   // TODO: Make it less big, too much logic
-  mynoises = scaledNoise(state);
+  const mynoises = scaledNoise(state);
   if (mynoises(coord[0], coord[1]) <= 0.3) {
     return color(state.palette[0].map(x => x - 10));
   } else if (mynoises(coord[0], coord[1]) <= 0.48) {
