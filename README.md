@@ -2,8 +2,16 @@
 
 > "An artistic project that generates random planets along with a random descritpion."
 
+<p>
+<img src="img/tinyplanet01" width="100px" title="A tiny planet">
+<img src="img/tinyplanet02" width="100px" title="A tiny planet">
+<img src="img/tinyplanet03" width="100px" title="A tiny planet">
+<img src="img/tinyplanet04" width="100px" title="A tiny planet">
+</p>
+
 You can see them [here !](https://supermayo.github.io/tinyPlanets)
 
 ## Technical characteristics:
+
 - [p5js](https://p5js.org/) as 2d renderer
 - [Andres circle algorithm](https://fr.wikipedia.org/wiki/Algorithme_de_trac%C3%A9_de_cercle_d%27Andres#cite_note-1) (french only)
