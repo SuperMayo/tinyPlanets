@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tiny Planets</title>
+    <link rel="icon" href="src/icon.png" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js"
+      integrity="sha256-7/yoZS3548fXSRXqc/xYzjsmuW3sFKzuvOCHd06Pmps="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="lib/p5.min.js"></script>
+    <script src="src/random.js"></script>
+    <script src="src/bitmap.js"></script>
+    <script src="src/logic.js"></script>
+    <script src="src/planet.js"></script>
+    <script src="src/nameGen.js"></script>
+    <script src="src/app.js"></script>
+  </head>
+  <body>
+    <div class="polaroid container">
+      <div id="canvas"></div>
+      <p id="planetDescription"></p>
+    </div>
+    <footer>
+      <p id="credits">
+        &#169; 2019 Tiny Planets. Antoine Mayerowitz - CC BY-NC-SA.
+        <a href="https://github.com/SuperMayo/tinyPlanets">See me on Github</a>
+      </p>
+    </footer>
+    <script>
+      document.getElementById("planetDescription").innerHTML = makeSentence(
+        DICT
+      );
+    </script>
+  </body>
+</html>

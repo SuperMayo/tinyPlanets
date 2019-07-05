@@ -1,0 +1,62 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background-color: #161831;
+}
+body {
+  margin: 0;
+  display: flex;
+
+  /* This centers our sketch horizontally. */
+  justify-content: center;
+
+  /* This centers our sketch vertically. */
+  align-items: center;
+}
+.polaroid {
+  height: 312px;
+  width: 220px;
+  background-color: #ecf0f1;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+  border-radius: 1px;
+}
+#canvas canvas {
+  margin: 10px;
+  background-color: #161831;
+}
+
+#planetDescription {
+  margin: 0px 10px 10px 10px;
+  padding: 3px;
+  font-family: "Indie Flower", cursive;
+  transform: rotate(-3deg);
+  /* Safari */
+  -webkit-transform: rotate(-3deg);
+
+  /* Firefox */
+  -moz-transform: rotate(-3deg);
+
+  /* IE */
+  -ms-transform: rotate(-3deg);
+
+  /* Opera */
+  -o-transform: rotate(-3deg);
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  color: #ecf0f1;
+  font-size: 12px;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
+
+a {
+  color: #ecf0f1;
+}
+
+a:hover {
+  color: white;
+}
